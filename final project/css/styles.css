@@ -1,0 +1,31 @@
+#meet-the-team img{
+    width: 100%;  /* fit the image within the div */
+    margin: 15px 0;
+  }
+  body {
+    display: flex;  /* setting "display: flex" allows its children (e.g. "main" below) to use the "flex" property */
+    flex-direction: column;
+    padding-top: 56px;  /* allow enough space for a fixed navbar (56px is the height of the navbar here) */
+    min-height: 100vh;  /* i.e minimum width is 100% of the "viewport height"... i.e the full screen height */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#name{
+    text-align: center;
+}
+
+main {
+    flex: 1;  /* makes the <main> grow (we want it to grow so that it pushes <footer> to the bottom of page)*/
+}
+footer {
+    display: flex;  /* allows use of "justify-content" property */
+    justify-content: center;  /* horizontally centers the contents (the social icons) */
+    background-color: #666;
+    height: 70px;
+    padding: 10px;
+  }
+  
+  footer a {
+    margin: 5px;
+    text-decoration: none!important;
+  }
